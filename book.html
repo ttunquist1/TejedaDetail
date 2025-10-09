@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Appointment | Precision Auto Detailing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Precision Auto Detailing</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="book.html" class="active">Book</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <h1>Book an Appointment</h1>
+  </section>
+
+  <section class="booking">
+    <form id="bookingForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="service">Select Service</label>
+      <select id="service" name="service" required>
+        <option value="">-- Select a Service --</option>
+        <option value="basic">Basic Wash</option>
+        <option value="interior">Interior Deep Clean</option>
+        <option value="full">Full Detail</option>
+      </select>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="message">Additional Details</label>
+      <textarea id="message" name="message" rows="4" placeholder="Tell us anything else..."></textarea>
+
+      <button type="submit" class="btn">Submit Booking</button>
+    </form>
+    <p id="formMessage" class="form-message"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Precision Auto Detailing. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
